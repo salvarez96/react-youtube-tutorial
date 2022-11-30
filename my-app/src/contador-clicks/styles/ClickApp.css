@@ -19,3 +19,13 @@
 .logo__freecodecamp {
   height: 50px;
 }
+
+.contador {
+  height: 550px;
+  min-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

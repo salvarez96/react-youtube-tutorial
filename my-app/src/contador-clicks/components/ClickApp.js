@@ -2,6 +2,7 @@ import React from 'react';
 import fccLogo from '../images/fcc_primary_large.png'
 import '../styles/ClickApp.css'
 import Boton from './Boton';
+import Contador from './Contador';
 
 function ClickApp() {
 
@@ -26,6 +27,8 @@ function ClickApp() {
           alt='Logo de FreeCodeCamp' />
       </div>
       <div className='contador'>
+        <Contador
+          conteo={contador} />
         <Boton 
           texto='Click'
           esBotonDeClick={true}
