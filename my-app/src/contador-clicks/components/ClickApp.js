@@ -3,18 +3,18 @@ import fccLogo from '../images/fcc_primary_large.png'
 import '../styles/ClickApp.css'
 import Boton from './Boton';
 import Contador from './Contador';
+import { useState } from 'react';
 
 function ClickApp() {
 
-  let contador = 0;
+  const [contador, setContador] = useState(0);
+
   const manejarClick = () => {
-    contador++;
-    console.log(contador);
+    setContador(contador + 1);
   }
   const reinicarClick = () => {
     if (contador > 0){
-      contador = 0;
-      console.log(contador);
+      setContador(0);
     }
   }
 
