@@ -1,0 +1,21 @@
+.click-contenedor {
+  background-color: #1b1b32;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  font-family: inherit;
+}
+
+.logo-contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.logo__freecodecamp {
+  height: 50px;
+}
