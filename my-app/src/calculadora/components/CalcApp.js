@@ -3,6 +3,7 @@ import fccLogo from '../images/fcc_primary_large.png';
 import '../styles/CalcApp.css';
 import Boton from './Boton';
 import Pantalla from './Pantalla';
+import BotonClear from './BotonClear';
 
 function CalcApp() {
   return (
@@ -40,7 +41,7 @@ function CalcApp() {
           <Boton>/</Boton>
         </div>
         <div className="fila">
-
+          <BotonClear>Clear</BotonClear>
         </div>
       </div>
     </section>
