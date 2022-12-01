@@ -2,6 +2,7 @@ import React from 'react';
 import fccLogo from '../images/fcc_primary_large.png';
 import '../styles/CalcApp.css';
 import Boton from './Boton';
+import Pantalla from './Pantalla';
 
 function CalcApp() {
   return (
@@ -13,6 +14,7 @@ function CalcApp() {
           alt='Logo de FreeCodeCamp' />
       </div>
       <div className="calculadora">
+        <Pantalla />
         <div className="fila">
           <Boton>1</Boton>
           <Boton>2</Boton>

@@ -3,7 +3,7 @@ import '../styles/Boton.css';
 
 function Boton({ children }) {
   const esOperador = valor => {
-    return isNaN(valor) && (valor != '.') && (valor != '=');
+    return isNaN(valor) && (valor !== '.') && (valor !== '=');
   }
   return (
     <div 
