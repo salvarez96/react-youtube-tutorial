@@ -50,7 +50,7 @@ function CalcApp() {
           <Boton manejarClick={agregarInput}>/</Boton>
         </div>
         <div className="fila">
-          <BotonClear>Clear</BotonClear>
+          <BotonClear manejarClear={() => setInput('')}>Clear</BotonClear>
         </div>
       </div>
     </section>
