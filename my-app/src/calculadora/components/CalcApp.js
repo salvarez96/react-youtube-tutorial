@@ -11,13 +11,25 @@ function CalcApp() {
 
   const [input, setInput] = useState('');
 
+  const limpiarPantalla = () => {
+    setInput('');
+  }
+
   const agregarInput = value => {
-    setInput(input + value);
+    if(input === 'SyntaxError'){
+      limpiarPantalla();
+    } else {
+      setInput(input + value);
+    }
   }
 
   const calcularResultado = () => {
-    if (isNaN(input))
+    try {
+      if (isNaN(input))
       setInput(evaluate(input));
+    } catch {
+      setInput('SyntaxError');
+    }
   }
 
   return (
@@ -56,7 +68,7 @@ function CalcApp() {
           <Boton manejarClick={agregarInput}>/</Boton>
         </div>
         <div className="fila">
-          <BotonClear manejarClear={() => setInput('')}>Clear</BotonClear>
+          <BotonClear manejarClear={limpiarPantalla}>Clear</BotonClear>
         </div>
       </div>
     </section>
