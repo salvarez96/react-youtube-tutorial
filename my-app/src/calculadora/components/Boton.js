@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/Boton.css';
 
-function Boton({ children }) {
+function Boton({ children, manejarClick }) {
   const esOperador = valor => {
     return isNaN(valor) && (valor !== '.') && (valor !== '=');
   }
@@ -11,7 +11,8 @@ function Boton({ children }) {
         `boton-contenedor 
         ${esOperador(children) ? 'operador' : 
         children === '=' ? 'igual' : ''}`.trimEnd()
-        }>
+      }
+      onClick={() => manejarClick(children)}>
       {children}
     </div>
   );
