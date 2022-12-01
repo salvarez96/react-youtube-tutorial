@@ -12,6 +12,8 @@
   border: 2px solid white;
   border-radius: 45px;
   cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .boton-clear:hover {

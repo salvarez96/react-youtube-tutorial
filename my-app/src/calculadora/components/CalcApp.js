@@ -5,6 +5,7 @@ import Boton from './Boton';
 import Pantalla from './Pantalla';
 import BotonClear from './BotonClear';
 import { useState } from 'react';
+import { evaluate } from 'mathjs';
 
 function CalcApp() {
 
@@ -12,6 +13,11 @@ function CalcApp() {
 
   const agregarInput = value => {
     setInput(input + value);
+  }
+
+  const calcularResultado = () => {
+    if (isNaN(input))
+      setInput(evaluate(input));
   }
 
   return (
@@ -46,7 +52,7 @@ function CalcApp() {
         <div className="fila">
           <Boton manejarClick={agregarInput}>.</Boton>
           <Boton manejarClick={agregarInput}>0</Boton>
-          <Boton manejarClick={agregarInput}>=</Boton>
+          <Boton manejarClick={calcularResultado}>=</Boton>
           <Boton manejarClick={agregarInput}>/</Boton>
         </div>
         <div className="fila">
