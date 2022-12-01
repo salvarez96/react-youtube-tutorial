@@ -11,6 +11,9 @@ function CalcApp() {
           src={fccLogo} 
           alt='Logo de FreeCodeCamp' />
       </div>
+      <div className="calculadora">
+        
+      </div>
     </section>
   );
 }
