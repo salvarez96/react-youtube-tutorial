@@ -1,8 +1,8 @@
 import React from 'react';
-import fccLogo from '../images/fcc_primary_large.png'
 import '../styles/ClickApp.css'
 import Boton from './Boton';
 import Contador from './Contador';
+import Header from '../../components/Header';
 import { useState } from 'react';
 
 function ClickApp() {
@@ -20,12 +20,7 @@ function ClickApp() {
 
   return(
     <section className='click-contenedor'>
-      <div className='logo-contenedor'>
-        <img 
-          className='logo__freecodecamp' 
-          src={fccLogo} 
-          alt='Logo de FreeCodeCamp' />
-      </div>
+      <Header />
       <div className='contador'>
         <Contador
           conteo={contador} />

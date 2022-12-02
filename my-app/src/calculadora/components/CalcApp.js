@@ -1,6 +1,6 @@
 import React from 'react';
-import fccLogo from '../images/fcc_primary_large.png';
 import '../styles/CalcApp.css';
+import Header from '../../components/Header';
 import Boton from './Boton';
 import Pantalla from './Pantalla';
 import BotonClear from './BotonClear';
@@ -34,12 +34,7 @@ function CalcApp() {
 
   return (
     <section className='calculadora-contenedor'>
-      <div className='logo-contenedor'>
-        <img 
-          className='logo__freecodecamp' 
-          src={fccLogo} 
-          alt='Logo de FreeCodeCamp' />
-      </div>
+      <Header />
       <div className="calculadora">
         <Pantalla 
           input={input} />

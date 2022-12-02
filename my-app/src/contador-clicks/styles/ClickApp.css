@@ -8,18 +8,6 @@
   font-family: inherit;
 }
 
-.logo-contenedor {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-}
-
-.logo__freecodecamp {
-  height: 50px;
-}
-
 .contador {
   height: 550px;
   min-width: 600px;
