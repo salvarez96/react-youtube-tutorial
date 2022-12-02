@@ -2,9 +2,9 @@ import React from "react";
 import '../styles/Tarea.css';
 import { AiOutlineCloseCircle as CloseCircle } from 'react-icons/ai';
 
-function Tarea({ texto }) {
+function Tarea({ texto, completada }) {
   return(
-    <article className="tarea-contenedor">
+    <article className={completada ? 'tarea-contenedor completada' : 'tarea-contenedor'}>
       <div className="tarea-texto">
         {texto}
       </div>

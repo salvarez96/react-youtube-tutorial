@@ -9,7 +9,7 @@ function TareasApp() {
       <Header />
       <div className="tareas-lista-principal">
         <h2>Mis Tareas</h2>
-        <Tarea />
+        <Tarea texto='Aprender React'/>
       </div>
     </section>
   );
