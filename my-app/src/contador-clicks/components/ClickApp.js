@@ -3,38 +3,43 @@ import '../styles/ClickApp.css'
 import Boton from './Boton';
 import Contador from './Contador';
 import Header from '../../components/Header';
-import { useState } from 'react';
 
-function ClickApp() {
-
-  const [contador, setContador] = useState(0);
-
-  const manejarClick = () => {
-    setContador(contador + 1);
-  }
-  const reinicarClick = () => {
-    if (contador > 0){
-      setContador(0);
-    }
+class ClickApp extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      contador: 0
+    };
+    this.manejarClick = this.manejarClick.bind(this);
+    this.reinicarClick = this.reinicarClick.bind(this);
   }
 
-  return(
-    <section className='click-contenedor'>
-      <Header />
-      <div className='contador'>
-        <Contador
-          conteo={contador} />
-        <Boton 
-          texto='Click'
-          esBotonDeClick={true}
-          manejarClick={manejarClick} />
-        <Boton 
-          texto='Reiniciar'
-          esBotonDeClick={false}
-          manejarClick={reinicarClick} />
-      </div>
-    </section>
-  );
+  manejarClick() {
+    this.setState(({ contador }) => ({ contador: contador + 1}));
+  }
+  reinicarClick() {
+    this.setState({ contador : 0 });
+  }
+
+  render() {
+    return(
+      <section className='click-contenedor'>
+        <Header />
+        <div className='contador'>
+          <Contador
+            conteo={this.state.contador} />
+          <Boton 
+            texto='Click'
+            esBotonDeClick={true}
+            manejarClick={this.manejarClick} />
+          <Boton 
+            texto='Reiniciar'
+            esBotonDeClick={false}
+            manejarClick={this.reinicarClick} />
+        </div>
+      </section>
+    );
+  }
 }
 
 export default ClickApp
