@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.2182e99c.css",
-    "main.js": "/static/js/main.f242cf64.js",
-    "static/media/testimonio-emma.png": "/static/media/testimonio-emma.add10415a5668325d2f2.png",
-    "static/media/testimonio-sarah.png": "/static/media/testimonio-sarah.2c504d1ebaf1961e4a40.png",
-    "static/media/testimonio-shawn.png": "/static/media/testimonio-shawn.0d373888087fb18fc145.png",
-    "static/media/fcc_primary_large.png": "/static/media/fcc_primary_large.5486935b905c7949600c.png",
-    "index.html": "/index.html",
-    "main.2182e99c.css.map": "/static/css/main.2182e99c.css.map",
-    "main.f242cf64.js.map": "/static/js/main.f242cf64.js.map"
+    "main.css": "/react-youtube-tutorial/static/css/main.2182e99c.css",
+    "main.js": "/react-youtube-tutorial/static/js/main.ea3aedfa.js",
+    "static/media/testimonio-emma.png": "/react-youtube-tutorial/static/media/testimonio-emma.add10415a5668325d2f2.png",
+    "static/media/testimonio-sarah.png": "/react-youtube-tutorial/static/media/testimonio-sarah.2c504d1ebaf1961e4a40.png",
+    "static/media/testimonio-shawn.png": "/react-youtube-tutorial/static/media/testimonio-shawn.0d373888087fb18fc145.png",
+    "static/media/fcc_primary_large.png": "/react-youtube-tutorial/static/media/fcc_primary_large.5486935b905c7949600c.png",
+    "index.html": "/react-youtube-tutorial/index.html",
+    "main.2182e99c.css.map": "/react-youtube-tutorial/static/css/main.2182e99c.css.map",
+    "main.ea3aedfa.js.map": "/react-youtube-tutorial/static/js/main.ea3aedfa.js.map"
   },
   "entrypoints": [
     "static/css/main.2182e99c.css",
-    "static/js/main.f242cf64.js"
+    "static/js/main.ea3aedfa.js"
   ]
 }
